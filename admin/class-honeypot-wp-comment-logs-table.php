@@ -141,27 +141,35 @@ class Honeypot_Wp_Comment_Logs_Table extends WP_List_Table {
 	 * @access public
 	 */
 	public function process_bulk_action() {
-		if ( 'delete' === $this->current_action() ) {
-			$this->delete_log( absint( $_GET['log'] ) );
-			wp_redirect( admin_url( 'admin.php?page=honeypot-wp-comment-logs' ) );
-		}
+	    if ( ! current_user_can( 'manage_options' ) ) {
+	        wp_die( __( 'You do not have sufficient permissions to access this page.', 'honeypot-for-wp-comment' ) );
+	    }
 
-		// If the delete bulk action is triggered
-		if ( ( isset( $_POST['action'] ) && $_POST['action'] == 'bulk-delete' )
-		     || ( isset( $_POST['action2'] ) && $_POST['action2'] == 'bulk-delete' )
-		) {
+	    if ( 'delete' === $this->current_action() ) {
+	        if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( $_GET['_wpnonce'], 'bulk-delete' ) ) {
+	            wp_die( __( 'Invalid request.', 'honeypot-for-wp-comment' ) );
+	        }
+	        $this->delete_log( absint( $_GET['log'] ) );
+	        wp_redirect( admin_url( 'admin.php?page=honeypot-wp-comment-logs' ) );
+	        exit;
+	    }
 
-			$delete_ids = esc_sql( $_POST['bulk-delete'] );
+	    if ( ( isset( $_POST['action'] ) && $_POST['action'] == 'bulk-delete' )
+	         || ( isset( $_POST['action2'] ) && $_POST['action2'] == 'bulk-delete' )
+	    ) {
+	        if ( ! isset( $_POST['_wpnonce'] ) || ! wp_verify_nonce( $_POST['_wpnonce'], 'bulk-delete' ) ) {
+	            wp_die( __( 'Invalid request.', 'honeypot-for-wp-comment' ) );
+	        }
 
-			// loop over the array of record IDs and delete them
-			foreach ( $delete_ids as $id ) {
-				$this->delete_log( $id );
+	        $delete_ids = esc_sql( $_POST['bulk-delete'] );
 
-			}
+	        foreach ( $delete_ids as $id ) {
+	            $this->delete_log( $id );
+	        }
 
-			wp_redirect( esc_url_raw( remove_query_arg( 'paged' ) ) );
-			exit;
-		}
+	        wp_redirect( esc_url_raw( remove_query_arg( 'paged' ) ) );
+	        exit;
+	    }
 	}
 
 	/**

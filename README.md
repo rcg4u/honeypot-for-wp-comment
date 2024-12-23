@@ -44,6 +44,12 @@ It is a very simple plugin to filter out the spam comments by using the popular 
 3. Honeypot logs
 
 == Changelog ==
+= 2.2.5 =
+* Fixed Cross Site Scripting (XSS) vulnerability.
+
+= 2.2.4 =
+* Fixed arbitrary file deletion vulnerability.
+
 = 2.2.3 =
 * WP 5.8 compatibility check
 
