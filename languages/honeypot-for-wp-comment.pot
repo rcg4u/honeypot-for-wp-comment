@@ -1,0 +1,291 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Honeypot for WP Comment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-21 12:10+0000\n"
+"POT-Revision-Date: 2020-07-01 07:05+0000\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.4.2\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE"
+
+#: admin/class-honeypot-wp-comment-admin.php:104
+msgid ""
+"\"Honeypot for WP Comment\" data update complete. Thank you for updating to "
+"the latest version!"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:146
+msgid "Additional spam words"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:68
+msgid "Advanced Settings"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-logs-table.php:197
+msgid "Agent"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:152
+msgid "Any link restriction"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-logs-table.php:193
+msgid "Author"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:64
+msgid "Basic Settings"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:159
+msgid "Block completely"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:160
+msgid ""
+"By enabling this, spam comments will not be saved in WP comments database."
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:127
+msgid ""
+"Check this to enable the IP restriction. By enabling this, It will add the "
+"commenter's IP to the restriction list if trapped as spam."
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:102
+msgid "Check this to enable the log."
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-logs-table.php:195
+msgid "Comment"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:110
+msgid "Comment status"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:139
+msgid "Common spam words restriction"
+msgstr ""
+
+#: public/class-honeypot-wp-comment-public.php:199
+msgid "Completely blocked."
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-logs-table.php:199
+msgid "Date"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-logs-table.php:115
+#: admin/class-honeypot-wp-comment-logs-table.php:129
+msgid "Delete"
+msgstr ""
+
+#: public/class-honeypot-wp-comment-public.php:119
+msgid ""
+"Duplicate comment detected; it looks as though you&#8217;ve already said "
+"that!"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-logs-table.php:194
+msgid "Email"
+msgstr ""
+
+#: public/class-honeypot-wp-comment-public.php:149
+msgid "Email domain restricted. Completely blocked."
+msgstr ""
+
+#: public/class-honeypot-wp-comment-public.php:154
+#, php-format
+msgid "Email domain restricted. Trapped as %s"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:120
+msgid "Email domain restriction"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:86
+msgid "Enable / Disable"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:126
+msgid "Enable IP restriction"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:101
+msgid "Enable Log"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:46
+msgid "Honeypot"
+msgstr ""
+
+#. Name of the plugin
+msgid "Honeypot for WP Comment"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-admin.php:40
+msgid "Honeypot for WP Comment requires database update."
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-admin.php:133
+msgid "Honeypot for WP comment settngs."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://prasidhda.com.np"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://wordpress.org/plugins/honeypot-for-wp-comment/"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:93
+msgid "Input Fields"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-logs-table.php:196
+msgid "IP"
+msgstr ""
+
+#: public/class-honeypot-wp-comment-public.php:131
+msgid "IP address restricted. Completely blocked."
+msgstr ""
+
+#: public/class-honeypot-wp-comment-public.php:136
+#, php-format
+msgid "IP address restricted. Trapped as %s"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:133
+msgid "IP restriction"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:49
+msgid "Logs"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:191
+msgid "Logs of Honeypot trapped comments."
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-logs-table.php:38
+msgid "No Log records available."
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:140
+#, php-format
+msgid ""
+"Please check this to enable <a href=\"%s\" target=\"_blank\">common spam "
+"words </a> restriction."
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:153
+msgid ""
+"Please check this to enable the comment restriction if comment contains any "
+"link"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:87
+msgid "Please check this to enable the honeypot"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:147
+msgid ""
+"Please put the additional spam words here. Please each words in new line."
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:121
+msgid ""
+"Please put the email domain without \"@\".<br> Example: <strong>\"mailinator."
+"com\"</strong>. <br>You can put multi domains in new line."
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:94
+msgid ""
+"Please put the input field name for honeypot. Please make sure to use very "
+"common names like <strong>\"name\", \"phone\",\"email\", \"confirm-"
+"email\"</strong> etc.<br> If left empty, default fields \"phone\" & "
+"\"confirm-email\" will be used.<br> Example: <strong>name : Please enter "
+"your name</strong>.<br> Use new line for multiple field names."
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:134
+msgid ""
+"Please put the IP address to be blocked from commenting.You can manually put "
+"multi IPs in new line."
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:111
+msgid ""
+"Please select the comment status to be set for trapped spam comments. <br>"
+"This setting will only work if you disable the <strong>\"Block "
+"Completely\"</strong> feature."
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-logs-table.php:192
+msgid "Post"
+msgstr ""
+
+#. Author of the plugin
+msgid "Prasidhda Malla"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-logs-table.php:198
+msgid "Remarks"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-admin.php:44
+msgid "Run the updater"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-admin.php:133
+#: admin/class-honeypot-wp-comment-settings.php:47
+#: admin/class-honeypot-wp-comment-settings.php:47
+msgid "Settings"
+msgstr ""
+
+#. Description of the plugin
+msgid "Simple plugin to trap the spam comments using honeypot technique."
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:114
+msgid "Spam"
+msgstr ""
+
+#: public/class-honeypot-wp-comment-public.php:182
+#, php-format
+msgid "Spam words detected <strong>%1$s</strong>. Completely blocked."
+msgstr ""
+
+#: public/class-honeypot-wp-comment-public.php:187
+#, php-format
+msgid "Spam words detected <strong>%1$s</strong>. Trapped as %2$s"
+msgstr ""
+
+#: public/class-honeypot-wp-comment-public.php:204
+#, php-format
+msgid "Trapped as %s"
+msgstr ""
+
+#: admin/class-honeypot-wp-comment-settings.php:115
+msgid "Trash"
+msgstr ""
+
+#: public/class-honeypot-wp-comment-public.php:166
+#, php-format
+msgid "URLs detected in comment <strong>%1$s</strong>. Completely blocked."
+msgstr ""
+
+#: public/class-honeypot-wp-comment-public.php:171
+#, php-format
+msgid "URLs detected in comment <strong>%1$s</strong>. Trapped as %2$s"
+msgstr ""
